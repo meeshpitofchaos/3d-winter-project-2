@@ -1,6 +1,7 @@
 
 //Written by William Luk
 // posts data to an Adafuit.io feed
+//modified by michelle lillo meza
 let url = 'https://io.adafruit.com/api/v2/MeeshisChaos/feeds/servo/data';
 let slider;
 let img;
@@ -63,7 +64,7 @@ function off() {
 function sendData(turnOn){
   let postData ={
     "value": turnOn,
-    "X-AIO-Key": "aio_ZqCk60jb4yBiGUX57cZvbiul0RO6"
+    "X-AIO-Key": ""
   };
   httpPost(url, 'json', postData, function(result){
     console.log(result);
